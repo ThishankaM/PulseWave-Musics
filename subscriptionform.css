@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(-45deg, #6c5f8d, #9c8cb9, #4b3f6e,#ba96c1);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 25%; }
+    12.50% { background-position: 25% 50%; }
+    25.00% { background-position: 50% 75%; }
+    37.50% { background-position: 75% 100%; }
+    50.00% { background-position: 75% 100%; }
+    62.50% { background-position: 100% 75%; }
+    75.00% { background-position: 75% 50%; }
+    87.50% { background-position: 50% 25%; }
+    100% { background-position: 25% 0%; }
+}
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.37);
+    color: white;
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group select, .form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.37);
+}
+.form-group button {
+    background: #6c5f8d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background: #4b3f6e;
+}

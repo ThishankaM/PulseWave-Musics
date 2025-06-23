@@ -1,0 +1,91 @@
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.playlist-management ul, .playlist-songs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist-management li, .playlist-songs li {
+    margin: 5px 0;
+}
+.Playlist-Container{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.37);
+    border-radius: 15px;
+    width: auto;
+    height: 485px;
+    margin: 20px;
+}
+.Playlist-Container input {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.37);
+    border-radius: 15px;
+    width: 300px;
+    height: 35px;
+    margin: 20px;
+}
+.create-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.37);
+    border-radius: 15px;
+    font-size: 18px;
+    height: 35px;
+    width: 160px;
+    margin: 20px;
+}
+.Playlists{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 20px;
+    gap: 20px;
+    
+}
+.Playlist-Container h3 {
+    margin: 20px;
+    color: white;
+    
+}
+.delete-btn{
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    color: red;
+}
+.play-items{
+    list-style: none;
+    font-size: 18px;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+a { 
+    color: inherit;
+    text-decoration: none; /* This will remove the underline */ 
+}
